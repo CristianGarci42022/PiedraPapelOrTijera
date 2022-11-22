@@ -30,14 +30,14 @@ tijeraBtn.addEventListener("click", ()=>{
 //Opcion de Usuario
 function juegoUsuario(opcionUsuario){
      //resultado por imagenes del opcion del usuario
-     usuarioImg.src= "imagenes/"+opcionUsuario+".png"
+     usuarioImg.src= "Imagenes/"+opcionUsuario+".png"
      resultadoTexto.innerHTML = "UN MOMENTO ESPERANDO EL RESULTADO";
 
 
      //ESCOGIENDO LA MAQUINA ENTRE DIFERENTES OPCIONES(IMAGENES)
      const interval = setInterval(function(){ 
         const opcionMaquina = calcularOpcionMaquina();
-        maquinaImg.src= "imagenes/"+opcionMaquina+".png"
+        maquinaImg.src= "Imagenes/"+opcionMaquina+".png"
      },100);
      setTimeout(function(){
         clearInterval(interval);
@@ -46,7 +46,7 @@ function juegoUsuario(opcionUsuario){
         const resultado = calcularResultado(opcionUsuario, opcionMaquina);
     
         //resultado por imagenes del opcion del maquina
-        maquinaImg.src= "imagenes/"+opcionMaquina+".png"
+        //maquinaImg.src= "imagenes/"+opcionMaquina+".png"
         
         //ver por pantalla si se a GANADO o PERDIDO
         switch(resultado){
